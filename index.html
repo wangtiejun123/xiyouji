@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>王铁军</title>
+    <meta name='Keywords' content=''>
+    <meta name='Description' content=''>
+    <style>
+        /* 风格 样式 css样式 层叠样式表 */
+        
+        body {
+            /* 元素选择器 */
+            margin: 0;
+            /* 去除外边距 */
+            background-image: url('./img/images/bg.jpg');
+            /* 背景图片  url 路径 */
+            animation: bg 2000s infinite;
+        }
+        
+        @keyframes bg {
+            to {
+                background-position: 108000px 0;
+                /* 图片位置 x y */
+            }
+        }
+        
+        .xy {
+            /* class选择器 选择页面中名字叫 xxx的元素添加样式 */
+            position: relative;
+            /* 定位 相对定位 建立坐标器 */
+            top: 300px;
+            width: 100%;
+            /* 宽度: 数值/单位/像素; */
+            height: 200px;
+            /* 高度 */
+        }
+        
+        .xy div {
+            width: 180px;
+            height: 180px;
+        }
+        
+        .xy .wk {
+            position: absolute;
+            /* 绝对定位 */
+            top: 0;
+            left: 11%;
+            background-image: url('./img/images/1.png');
+            animation: run 1s steps(8) infinite;
+            /* 动画 steps脚步  无限*/
+        }
+        
+        .xy .bj {
+            position: absolute;
+            /* 绝对定位 */
+            top: -20px;
+            left: 33%;
+            background-image: url('./img/images/2.png');
+            animation: run 1s steps(8) infinite;
+        }
+        
+        .xy .ts {
+            position: absolute;
+            /* 绝对定位 */
+            top: -100px;
+            left: 52%;
+            background-image: url('./img/images/3.png');
+            animation: ts 1s steps(8) infinite;
+        }
+        
+        .xy .ss {
+            position: absolute;
+            /* 绝对定位 */
+            top: 10px;
+            left: 73%;
+            background-image: url('./img/images/4.png');
+            animation: ss 1s steps(8) infinite;
+        }
+        
+        p {
+            text-indent: 48%;
+        }
+        
+        @keyframes run {
+            to {
+                background-position: -1600px 0;
+                /* 图片位置 x y */
+            }
+        }
+        
+        @keyframes ts {
+            to {
+                background-position: -1360px 0;
+                /* 图片位置 x y */
+            }
+        }
+        
+        @keyframes ss {
+            to {
+                background-position: -1680px 0;
+                /* 图片位置 x y */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="./img/images/李贵府 - 漂亮的姑娘你别怕 (DJ版).mp3" controls="controls">
+        </audio>
+    <audio src="" controls="controls"></audio>
+    <h2>王铁军特为每个家庭女士制作，说出家庭妇女的心声。</h2>
+    <p>一个家庭就是西游记</p>
+    <div class='xy'>
+
+        <div class='wk'>妈<br/>妈<br/>就<br/>像<br/>孙<br/>悟<br/>空，<br/>一路坎坷，不畏艰险，有时还费力不讨好，吃喝拉撒全负担。</div>
+
+        <div class='bj'>爸<br/>爸<br/>就<br/>像<br/>猪<br/>八<br/>戒<br/>，<br/>就知道吃，一不小心还有可能被妖精勾引了去。</div>
+
+        <div class='ts'>孩<br/>子<br/>是<br/>唐<br/>僧<br/>，<br/><br/><br/><br/><br/><br/><br/>一路受着保护,有时还不辩好坏，忠奸不分。</div>
+
+        <div class='ss'>长<br/>辈<br/>就<br/>像<br/>沙<br/>僧<br/>，<br/>默默付出，不求回报。</div>
+    </div>
+</body>
+
+</html>
+<!--
+	尖括号包裹的关键词通常称之为标签
+	标签通常是成对出现的（双标签），也有单标签（元素）
+	class  类 给元素起个名字 不能用中文 不能用拼音 一定英文单词
+	颜色：  1: 英文单词
+			2: 十六进制 0-9 a-f  性能优化
+			3: rgb 3 1: red green blue 0-255
+			4:6个值 0-360 百分比
+	父相子绝
+	100% 根据浏览器窗口 500px 50px
+-->
